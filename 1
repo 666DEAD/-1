@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	float a, b, h, v, s;
+	printf("Write side a=\n");
+	scanf_s("%f", &a);
+	printf("Write side b=\n");
+	scanf_s("%f", &b);
+	printf("Write side h=\n");
+	scanf_s("%f", &h);
+	s = ((h * a) + (b * h) + (a * b)) * 2;
+	printf("s=%6.3f\n", s);
+	v = a * b * h;
+	printf("v=%6.3f\n", v);
+	return 0;
+}
