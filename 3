@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	float a, b, R, n;
+	printf("Print  a\n ");
+	scanf_s("%f", &a);
+	printf("Print b\n ");
+	scanf_s("%f", &b);
+	R = 1;
+	n = a + b;
+	{
+		if (0 >= n >= R)
+			printf("false\n");
+		else
+			printf("true\n");
+	}
+
+	return 0;
+}
