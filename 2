@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double a, b, c;
+    printf("a=");
+    scanf_s("%lf", &a);
+    printf("b=");
+    scanf_s("%lf", &b);
+    printf("c=");
+    scanf_s("%lf", &c);
+    if (a + b > c && a + c > b && b + c > a) {
+        printf("Triangle exist\n");
+        if (a * a + b * b == c * c || b * b + c * c == a * a || a * a + c * c == b * b) {
+            printf("Right triangle");
+        }
+        if (a * a < b * b + c * c && b * b < a * a + c * c && c * c < a * a + b * b) {
+            printf("Acute-angled triangle");
+        }
+        if (a * a > b * b + c * c || b * b > a * a + c * c || c * c > a * a + b * b) {
+            printf("Obtuse triangle");
+        }
+    }
+    else printf("Does not exist!");
+    return 0;
+}
